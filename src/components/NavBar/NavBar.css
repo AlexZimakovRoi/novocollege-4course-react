@@ -1,0 +1,33 @@
+.nav {
+    width: 15%;
+    height: 100%;
+    padding: 1vh 1vw;
+
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+}
+
+.nav > a {
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.nav-container > a {
+    font-size: 1.2vw;
+}
+
+.nav-container > .active {
+    color: aquamarine;
+}
+
+.nav {
+    border-right: 1px solid #c4c4c4;
+}

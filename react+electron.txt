@@ -1,0 +1,7 @@
+1. node.js || npm 
+2. figma || pixso
+3. js || react.js || firebase
+
+npm create vite@latest .
+npm i
+npm i react-router-dom
