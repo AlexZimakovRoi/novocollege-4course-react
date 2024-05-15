@@ -6,7 +6,7 @@ export const NavBar = () => {
     <nav className="nav">
         <a href="">Name app</a>
         <ol className="nav-container">
-            <NavLink to={'/'}>Главная</NavLink>
+            <NavLink to={'/main'}>Главная</NavLink>
             <NavLink to={'/add'}>Добавить</NavLink>
             <NavLink to={'/stat'}>Учет</NavLink>
             <NavLink to={'/settings'}>Настройки</NavLink>

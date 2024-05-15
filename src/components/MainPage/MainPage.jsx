@@ -1,12 +1,12 @@
-import { auth } from "../../services/firebase/config"
+import { user } from "../../services/store/user"
 
 export const MainPage = () => {
 
-    console.log(auth)
 
   return (
     <main className="main">
-        
+        <h1>email - {user.data.el.email}</h1>
+        <p>Количество тренировок - {user.data.el.training.length}</p>
     </main>
   )
 }

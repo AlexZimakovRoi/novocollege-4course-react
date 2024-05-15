@@ -16,7 +16,7 @@ export const Settings = () => {
 
         {
             redirect == true ? (
-                <Navigate to={'/redirect'} />
+                <Navigate to={'/'} />
             ) : ''
         }
     </main>
