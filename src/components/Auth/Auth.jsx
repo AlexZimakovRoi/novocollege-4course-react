@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
 import './Auth.css'
 import { auth, db } from '../../services/firebase/config'
 import { useState } from 'react'
@@ -37,7 +37,16 @@ export const Auth = () => {
     const [userPass, setUserPass] = useState('')
 
     const SignIn = () => {
-        console.log('input')
+        signInWithEmailAndPassword(auth, userEmail, userPass)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user)
+            setRedirect(true)
+          })
+          .catch((error) => {
+            const errorMessage = error.message;
+            console.log(errorMessage)
+          });
     }
 
   return (

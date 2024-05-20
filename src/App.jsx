@@ -7,6 +7,7 @@ import { Settings } from "./components/Settings/Settings"
 import { Redirect } from "./components/Redirect/Redirect"
 import { SetUser } from "./components/SetUser/SetUser"
 import { Add } from "./components/Add/Add"
+import { Stat } from "./components/Stat/Stat"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route index Component={SetUser} />
           <Route path="/main" Component={MainPage} />
           <Route path="/add" Component={Add} />
+          <Route path="/stat" Component={Stat} />
           <Route path="/register" Component={Auth} />
           <Route path="/settings" Component={Settings} />
           <Route path="/redirect" Component={Redirect} />
